@@ -1,0 +1,214 @@
+╔══════════════════════════════════════════════════════════════╗
+║        📦 دليل استخراج السورس كود على Windows 11 📦        ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ الملف المضغوط: kayan-erp-source-code.tar.gz
+✅ الحجم: 232 KB
+✅ عدد الملفات: 118
+
+══════════════════════════════════════════════════════════════
+
+🪟 طريقة فك الضغط على Windows 11:
+
+1️⃣ باستخدام Windows Explorer (مدمج):
+   • Windows 11 يدعم .tar.gz مباشرة
+   • انقر بزر الماوس الأيمن على الملف
+   • اختر "Extract All..." أو "استخراج الكل"
+   • اختر المجلد الوجهة
+   • انقر "Extract" أو "استخراج"
+
+2️⃣ باستخدام 7-Zip (مجاني):
+   • حمّل 7-Zip من: https://www.7-zip.org/
+   • انقر بزر الماوس الأيمن على الملف
+   • اختر: 7-Zip → Extract Here
+   • ✅ تم!
+
+3️⃣ باستخدام WinRAR:
+   • انقر بزر الماوس الأيمن
+   • اختر: Extract Here
+   • ✅ تم!
+
+4️⃣ باستخدام PowerShell:
+   tar -xzf kayan-erp-source-code.tar.gz
+
+══════════════════════════════════════════════════════════════
+
+🔧 تثبيت المتطلبات على Windows 11:
+
+1️⃣ تثبيت Node.js:
+   • حمّل من: https://nodejs.org/
+   • اختر LTS version
+   • نفذ التثبيت (Next → Next → Install)
+   • أعد تشغيل الكمبيوتر
+
+2️⃣ تحقق من التثبيت:
+   • افتح PowerShell أو CMD
+   • نفذ:
+     node --version
+     npm --version
+
+══════════════════════════════════════════════════════════════
+
+🚀 تشغيل المشروع على Windows 11:
+
+1️⃣ بعد فك الضغط، افتح PowerShell في مجلد project:
+   • Shift + Right Click في المجلد
+   • اختر: "Open PowerShell window here"
+
+2️⃣ ثبت الحزم:
+   npm install
+   
+   (قد يأخذ 2-5 دقائق)
+
+3️⃣ أنشئ ملف .env:
+   • افتح Notepad
+   • الصق:
+     VITE_SUPABASE_URL=your_supabase_url_here
+     VITE_SUPABASE_ANON_KEY=your_anon_key_here
+   • احفظ باسم: .env
+   • في مجلد project
+
+4️⃣ شغل المشروع:
+   npm run dev
+
+5️⃣ افتح المتصفح:
+   http://localhost:5173
+
+══════════════════════════════════════════════════════════════
+
+🌐 الحصول على بيانات Supabase:
+
+1. اذهب: https://app.supabase.com
+2. سجل دخول
+3. اختر مشروعك (أو أنشئ واحد جديد)
+4. اذهب: Settings → API
+5. انسخ:
+   • Project URL → VITE_SUPABASE_URL
+   • anon public key → VITE_SUPABASE_ANON_KEY
+
+══════════════════════════════════════════════════════════════
+
+📝 محرر الكود الموصى به:
+
+1️⃣ VS Code (الأفضل):
+   • حمّل من: https://code.visualstudio.com/
+   • ثبته
+   • افتح مجلد المشروع: File → Open Folder
+   • ثبت Extensions الموصى بها:
+     - ESLint
+     - Prettier
+     - Tailwind CSS IntelliSense
+     - TypeScript and JavaScript
+
+2️⃣ البدائل:
+   • WebStorm (مدفوع)
+   • Notepad++ (بسيط)
+   • Sublime Text
+
+══════════════════════════════════════════════════════════════
+
+🔧 حل المشاكل الشائعة على Windows:
+
+❌ "npm is not recognized"
+✅ الحل:
+   • أعد تشغيل الكمبيوتر بعد تثبيت Node.js
+   • أو أضف Node.js للـ PATH يدوياً
+
+❌ "Permission denied"
+✅ الحل:
+   • شغل PowerShell كـ Administrator
+   • Right-click → Run as administrator
+
+❌ "EACCES error"
+✅ الحل:
+   npm cache clean --force
+   npm install
+
+❌ Python errors أثناء npm install
+✅ الحل:
+   • حمّل Python: https://www.python.org/
+   • ثبت Visual Studio Build Tools
+
+══════════════════════════════════════════════════════════════
+
+📂 هيكل المشروع بعد الاستخراج:
+
+project/
+├── src/                  ← كود التطبيق
+├── public/               ← الصور والملفات العامة
+├── supabase/            ← قاعدة البيانات
+├── dist/                ← ملفات البناء
+├── package.json         ← الحزم المطلوبة
+├── .env                 ← متغيرات البيئة (أنشئه يدوياً)
+└── README.md            ← التعليمات
+
+══════════════════════════════════════════════════════════════
+
+🔄 سير العمل اليومي:
+
+صباح كل يوم:
+1. افتح VS Code
+2. افتح Terminal داخل VS Code
+3. شغل: npm run dev
+4. اعمل على الكود
+5. احفظ التغييرات (Ctrl+S)
+6. المتصفح يحدّث تلقائياً!
+
+══════════════════════════════════════════════════════════════
+
+📦 للنشر من Windows:
+
+طريقة 1: Netlify
+   npm run build
+   • اذهب: https://app.netlify.com
+   • اسحب مجلد dist
+
+طريقة 2: Vercel
+   npm install -g vercel
+   vercel login
+   vercel --prod
+
+══════════════════════════════════════════════════════════════
+
+💡 نصائح Windows:
+
+• استخدم Windows Terminal (أفضل من CMD)
+• فعّل WSL2 للأداء الأفضل
+• استخدم Git for Windows لإدارة الكود
+• ثبت Node.js LTS version دائماً
+• استخدم npm بدلاً من yarn (إلا إذا كان مطلوباً)
+
+══════════════════════════════════════════════════════════════
+
+🎯 خطوات الاستخدام السريع:
+
+1. حمّل الملف: kayan-erp-source-code.tar.gz
+2. استخرجه بـ 7-Zip أو Windows Explorer
+3. ثبت Node.js إذا لم يكن مثبتاً
+4. افتح PowerShell في مجلد project
+5. نفذ: npm install
+6. أنشئ .env مع بيانات Supabase
+7. نفذ: npm run dev
+8. افتح: http://localhost:5173
+9. ✅ استمتع!
+
+══════════════════════════════════════════════════════════════
+
+📱 Git على Windows:
+
+1. حمّل Git: https://git-scm.com/download/win
+2. ثبته
+3. في PowerShell:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin YOUR_REPO_URL
+   git push -u origin main
+
+══════════════════════════════════════════════════════════════
+
+✨ الملف متوافق مع Windows 11 بنسبة 100%!
+
+Windows 11 يدعم .tar.gz مباشرة، لا حاجة لبرامج إضافية!
+
+══════════════════════════════════════════════════════════════

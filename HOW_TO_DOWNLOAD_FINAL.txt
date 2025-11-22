@@ -1,0 +1,80 @@
+╔══════════════════════════════════════════════════════════════╗
+║           كيف تحمّل KAYAN ERP مع دعم SQL Server؟            ║
+║              How to Download KAYAN ERP Files                 ║
+╚══════════════════════════════════════════════════════════════╝
+
+📦 الملف: kayan-erp-sqlserver.tar.gz
+💾 الحجم: 540 KB
+📍 المسار: /tmp/cc-agent/54831328/kayan-erp-sqlserver.tar.gz
+
+══════════════════════════════════════════════════════════════
+
+🎯 الطريقة الأسهل - نسخة واحدة فقط:
+
+افتح Terminal ونفذ هذا الأمر:
+
+    cp /tmp/cc-agent/54831328/kayan-erp-sqlserver.tar.gz ~/Downloads/
+
+أو إذا كنت على Windows (WSL):
+
+    cp /tmp/cc-agent/54831328/kayan-erp-sqlserver.tar.gz /mnt/c/Users/$USER/Downloads/
+
+══════════════════════════════════════════════════════════════
+
+📋 محتويات الملف المضغوط:
+
+✅ السورس الأصلي الكامل
+   • 51 مكون React + TypeScript
+   • نظام ERP متكامل يعمل مع Supabase
+
+✅ ملفات تحويل SQL Server (NEW!)
+   • SQL_SERVER_CONVERSION_GUIDE.md (60+ صفحة)
+   • DEVELOPER_HANDOVER_GUIDE_AR.md (دليل التسليم)
+   • SQL_SERVER_DATABASE/00_SETUP_COMPLETE.sql
+   • SQL_SERVER_DATABASE/01_STORED_PROCEDURES_AUTH.sql
+   • SQL_SERVER_SUMMARY.txt
+
+✅ Build جاهز للنشر
+   • مجلد dist/ كامل
+   • جاهز للرفع على أي سيرفر
+
+✅ الوثائق الكاملة
+   • 3 أدلة شاملة بالعربي
+   • أمثلة كود جاهزة
+   • خطة تحويل مفصلة
+
+══════════════════════════════════════════════════════════════
+
+🚀 بعد التحميل:
+
+1. استخرج الملف:
+   ────────────────
+   cd ~/Downloads
+   tar -xzf kayan-erp-sqlserver.tar.gz
+   cd project
+
+2. اقرأ الأدلة:
+   ────────────────
+   cat SQL_SERVER_SUMMARY.txt         # ملخص سريع (5 دقائق)
+   cat SQL_SERVER_CONVERSION_GUIDE.md # دليل شامل (60+ صفحة)
+   cat DEVELOPER_HANDOVER_GUIDE_AR.md # دليل التسليم
+
+3. للمبرمج المحلي:
+   ────────────────
+   • ابدأ بقراءة SQL_SERVER_CONVERSION_GUIDE.md
+   • ثبت SQL Server + SSMS
+   • نفذ SQL_SERVER_DATABASE/00_SETUP_COMPLETE.sql
+   • نفذ SQL_SERVER_DATABASE/01_STORED_PROCEDURES_AUTH.sql
+   • ابدأ التحويل!
+
+══════════════════════════════════════════════════════════════
+
+📁 استعراض المحتويات بدون فك الضغط:
+
+    tar -tzf kayan-erp-sqlserver.tar.gz | less
+
+══════════════════════════════════════════════════════════════
+
+✨ كل شيء جاهز! المبرمج المحلي لديه كل ما يحتاج للبدء فوراً!
+
+══════════════════════════════════════════════════════════════
